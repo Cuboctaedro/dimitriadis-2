@@ -1,11 +1,10 @@
 module.exports = {
-  "title": "Web Starter",
-  "description": "Minimal boilerplate for new projects built with Eleventy, Tailwind, PurgeCSS and PostCSS",
-  "url": "https://webstarter.chriscollins.me",
-  "author": "Chris Collins",
+  "title": "Christina Dimitriadis",
+  "description": "Website of photographer Christina Dimitriadis",
+  "url": "https://christinadimitriadis.com",
+  "author": "Christina Dimitriadis",
   "meta_data": {
-    "twitter": "@scottishstoater",
-    "default_social_image": "/static/default_social_image.jpg"
+    "default_social_image": "/images/island-hoping-1.jpg"
   },
   "env": process.env.ELEVENTY_ENV === 'production'
 }
