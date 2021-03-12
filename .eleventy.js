@@ -4,6 +4,7 @@ const collections = require('./utils/collections.js')
 const {
     DateTime
 } = require("luxon");
+const htmlmin = require("html-minifier");
 
 
 const galleryData = require("./filters/gallerydata");
