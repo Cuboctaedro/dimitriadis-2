@@ -15,20 +15,22 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/images");
     eleventyConfig.addPassthroughCopy("src/photoswipe");
 
-    // Filters 
-    // Object.keys(filters).forEach((filterName) => {
-    //     eleventyConfig.addFilter(filterName, filters[filterName])
-    // })
-
-    // // Transforms
-    // Object.keys(transforms).forEach((transformName) => {
-    //     eleventyConfig.addTransform(transformName, transforms[transformName])
-    // })
-
-    // // Collections
-    // Object.keys(collections).forEach((collectionName) => {
-    //     eleventyConfig.addCollection(collectionName, collections[collectionName])
-    // })
+    if (process.env.ELEVENTY_ENV === 'production') {
+        // Minify HTML (including inlined CSS and JS) 
+        eleventyConfig.addTransform("compressHTML", function (content, outputPath) {
+            if (outputPath.endsWith(".html")) {
+                let minified = htmlmin.minify(content, {
+                    useShortDoctype: true,
+                    removeComments: true,
+                    collapseWhitespace: true,
+                    minifyCSS: true,
+                    minifyJS: true
+                });
+                return minified;
+            }
+            return content;
+        });
+    }
 
     // This allows Eleventy to watch for file changes during local development.
     eleventyConfig.addFilter('htmlDateString', (dateObj) => {

@@ -2,9 +2,16 @@
 <html lang="en">
     <head>
         {% include "head.njk" %}
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,800;1,400&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,800;1,400&display=swap" rel="stylesheet">
+        {% if site.env %}
+        <!-- capture the CSS content as a Liquid variable -->
+        {% set css %}{% include "app.compiled.css" %}{% endset %}
+        <style> 
+            {{ css | safe }}
+        </style>
+        {% else %}
         <link rel="stylesheet" href="/static/app.compiled.css">
+        {% endif %}
         {% block header %}{% endblock %}
     </head>
     <body class="font-base font-sans">
