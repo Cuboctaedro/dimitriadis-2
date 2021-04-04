@@ -29,7 +29,9 @@ const openPhotoSwipe = function(button) {
 
 if ( pswpButtons ) {
 	Array.prototype.forEach.call(pswpButtons, function(button) {
-		button.onclick = openPhotoSwipe(button);
+		button.addEventListener('click', function() {
+			penPhotoSwipe(button);
+		})
 	});
 	
 }
