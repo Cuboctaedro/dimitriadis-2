@@ -1,6 +1,8 @@
 const filters = require('./utils/filters.js')
 const transforms = require('./utils/transforms.js')
 const collections = require('./utils/collections.js')
+const Image = require('@11ty/eleventy-img')
+
 const {
     DateTime
 } = require("luxon");
@@ -8,6 +10,35 @@ const htmlmin = require("html-minifier");
 
 
 const galleryData = require("./filters/gallerydata");
+
+async function imageShortcode(src, className, alt, sizes = "100vw") {
+    if(alt === undefined) {
+      // You bet we throw an error on missing alt (alt="" works okay)
+      throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
+    }
+  
+    let metadata = await Image(src, {
+        widths: [300, 500, 900, 1200, 1600],
+        formats: ['webp', 'jpeg'],
+        outputDir: './dist/img/'
+    });
+  
+    let lowsrc = metadata.jpeg[0];
+  
+    return `<picture>
+      ${Object.values(metadata).map(imageFormat => {
+        return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
+      }).join("\n")}
+        <img
+            class="${className}"
+          src="${lowsrc.url}"
+          width="${lowsrc.width}"
+          height="${lowsrc.height}"
+          alt="${alt}"
+          loading="lazy"
+          decoding="async">
+      </picture>`;
+  }
 
 module.exports = function (eleventyConfig) {
     // Folders to copy to build dir (See. 1.1)
@@ -64,6 +95,8 @@ module.exports = function (eleventyConfig) {
             return b.data.order - a.data.order;
         });
     });    
+
+    eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 
     return {
         dir: {

@@ -1,12 +1,13 @@
 import PhotoSwipe from "photoswipe";
 import PhotoSwipeUI_Default from "photoswipe/dist/photoswipe-ui-default";
 
+const pswpButtons = document.querySelectorAll('[data-gallery]');
 
-const pswpButton = document.getElementById("pswp-button");
+console.log('new');
 
-const openPhotoSwipe = function() {
+
+const openPhotoSwipe = function(button) {
 	const pswpElement = document.querySelectorAll(".pswp")[0];
-
 	let options = {
 		history: true,
 		focus: false,
@@ -15,9 +16,7 @@ const openPhotoSwipe = function() {
 		hideAnimationDuration: 200
 	};
 
-	let items = JSON.parse(pswpButton.dataset.gallery);
-
-	console.log(items);
+	let items = JSON.parse(button.dataset.gallery);
 
 	let gallery = new PhotoSwipe(
 		pswpElement,
@@ -28,5 +27,10 @@ const openPhotoSwipe = function() {
 	gallery.init();
 };
 
+if ( pswpButtons ) {
+	Array.prototype.forEach.call(pswpButtons, function(button) {
+		button.onclick = openPhotoSwipe(button);
+	});
+	
+}
 
-pswpButton.onclick = openPhotoSwipe;
