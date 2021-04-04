@@ -9,7 +9,7 @@ module.exports = function (gallery) {
             imageObj = {
                 w: sizeOf("./src/" + image).width,
                 h: sizeOf("./src/" + image).height,
-                src: "https://christina-dimitriadis.netlify.com/" + image
+                src: "https://dimitriadis.netlify.com/" + image
             };
         } else {
             imageObj = {
