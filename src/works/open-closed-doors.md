@@ -9,6 +9,8 @@ tags: work
 order: 030
 cover: images/open-closed-doors-01.jpg
 gallery:
-  - images/open-closed-doors-01.jpg
-  - images/open-closed-doors-02.jpg
+  - url: images/open-closed-doors-01.jpg
+    title:
+  - url: images/open-closed-doors-02.jpg
+    title:
 ---

@@ -9,7 +9,10 @@ tags: work
 order: 090
 cover: images/promenade-01.jpg
 gallery:
-  - images/promenade-01.jpg
-  - images/promenade-02.jpg
-  - images/promenade-03.jpg
+  - url: images/promenade-01.jpg
+    title:
+  - url: images/promenade-02.jpg
+    title:
+  - url: images/promenade-03.jpg
+    title:
 ---

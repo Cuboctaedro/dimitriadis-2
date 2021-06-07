@@ -9,15 +9,26 @@ tags: work
 order: 120
 cover: images/firewalls-01.jpg
 gallery:
-  - images/firewalls-01.jpg
-  - images/firewalls-02.jpg
-  - images/firewalls-03.jpg
-  - images/firewalls-04.jpg
-  - images/firewalls-05.jpg
-  - images/firewalls-06.jpg
-  - images/firewalls-07.jpg
-  - images/firewalls-08.jpg
-  - images/firewalls-09.jpg
-  - images/firewalls-10.jpg
-  - images/firewalls-11.jpg
+  - url: images/firewalls-01.jpg
+    title: 
+  - url: images/firewalls-02.jpg
+    title: 
+  - url: images/firewalls-03.jpg
+    title: 
+  - url: images/firewalls-04.jpg
+    title: 
+  - url: images/firewalls-05.jpg
+    title: 
+  - url: images/firewalls-06.jpg
+    title: 
+  - url: images/firewalls-07.jpg
+    title: 
+  - url: images/firewalls-08.jpg
+    title: 
+  - url: images/firewalls-09.jpg
+    title: 
+  - url: images/firewalls-10.jpg
+    title: 
+  - url: images/firewalls-11.jpg
+    title: 
 ---

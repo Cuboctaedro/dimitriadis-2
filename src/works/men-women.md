@@ -13,7 +13,7 @@ gallery:
     title:
 installations:
   - url: images/men-women-premiere-01.jpg
-    title: '"La Premiere Image", curated by Denys Zacharopoulos, Centre Régional d'Art Contemporain Languedoc Roussilon, Sète, (C.R.A.C.)'
+    title: "'La Premiere Image', curated by Denys Zacharopoulos, Centre Régional d'Art Contemporain Languedoc Roussilon, Sète, (C.R.A.C.)"
   - url: images/men-women-premiere-02.jpg
-    title: '"La Premiere Image", curated by Denys Zacharopoulos, Centre Régional d'Art Contemporain Languedoc Roussilon, Sète, (C.R.A.C.)'
+    title: "'La Premiere Image', curated by Denys Zacharopoulos, Centre Régional d'Art Contemporain Languedoc Roussilon, Sète, (C.R.A.C.)"
 ---

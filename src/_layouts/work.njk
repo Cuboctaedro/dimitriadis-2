@@ -7,8 +7,8 @@
 {% endblock %}
 
 {% block content %}
-<div class="fixed inset-0 bg-center bg-cover flex items-center justify-center " style="background-image:url('/{{ cover }}');">
-    <main class="w-full  md:w-1/2  lg:w-1/3 xl:w-1/4  " >
+<div class="fixed inset-0 bg-center bg-cover flex items-center justify-center" style="background-image:url('/{{ cover }}');">
+    <main class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4" >
         <div class="w-full absolute md:relative inset-0 md:inset-auto bg-white" style="padding-top:100%;">
                 <article class="absolute inset-0 flex flex-col items-center justify-center text-center p-4 sm:p-6">
             <header class="mb-6">
@@ -19,9 +19,9 @@
                 <p class="mb-0">{{ place }}</p>
                 <p class="mb-0">Medium: {{ medium }}</p>
                 <p class="mb-6">Size: {{ size }}</p>
-                <a class="uppercase font-bold text-black cursor-pointer hover:text-gray-600 mb-3" data-gallery='{{ gallery | galleryData }}' >Images</a>
+                <a class="uppercase block font-bold text-black cursor-pointer hover:text-gray-600 mb-3" data-gallery='{{ gallery | galleryData }}' >Images</a>
                 {% if installations and installations.length > 0 %}
-                    <a class="uppercase font-bold text-black cursor-pointer hover:text-gray-600" data-gallery='{{ installations | galleryData }}' >Installation views</a>
+                    <a class="uppercase block font-bold text-black cursor-pointer hover:text-gray-600" data-gallery='{{ installations | galleryData }}' >Installation views</a>
                 {% endif %}
             </div>
         </article>

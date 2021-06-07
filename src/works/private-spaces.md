@@ -9,9 +9,14 @@ tags: work
 order: 020
 cover: images/private-spaces-01.jpg
 gallery:
-  - images/private-spaces-01.jpg
-  - images/private-spaces-02.jpg
-  - images/private-spaces-03.jpg
-  - images/private-spaces-04.jpg
-  - images/private-spaces-05.jpg
+  - url: images/private-spaces-01.jpg
+    title:
+  - url: images/private-spaces-02.jpg
+    title:
+  - url: images/private-spaces-03.jpg
+    title:
+  - url: images/private-spaces-04.jpg
+    title:
+  - url: images/private-spaces-05.jpg
+    title:
 ---

@@ -9,12 +9,20 @@ tags: work
 order: 048
 cover: images/brunnenstr-01.jpg
 gallery:
-  - images/brunnenstr-01.jpg
-  - images/brunnenstr-02.jpg
-  - images/brunnenstr-03.jpg
-  - images/brunnenstr-04.jpg
-  - images/brunnenstr-05.jpg
-  - images/brunnenstr-06.jpg
-  - images/brunnenstr-07.jpg
-  - images/brunnenstr-08.jpg
+  - url: images/brunnenstr-01.jpg
+    title: ''
+  - url: images/brunnenstr-02.jpg
+    title: ''
+  - url: images/brunnenstr-03.jpg
+    title: ''
+  - url: images/brunnenstr-04.jpg
+    title: ''
+  - url: images/brunnenstr-05.jpg
+    title: ''
+  - url: images/brunnenstr-06.jpg
+    title: ''
+  - url: images/brunnenstr-07.jpg
+    title: ''
+  - url: images/brunnenstr-08.jpg
+    title: ''
 ---

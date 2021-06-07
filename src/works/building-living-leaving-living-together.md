@@ -9,14 +9,24 @@ tags: work
 order: 046
 cover: images/living-together-01.jpg
 gallery:
-  - images/living-together-01.jpg
-  - images/living-together-02.jpg
-  - images/living-together-03.jpg
-  - images/living-together-04.jpg
-  - images/living-together-05.jpg
-  - images/living-together-06.jpg
-  - images/living-together-07.jpg
-  - images/living-together-08.jpg
-  - images/living-together-09.jpg
-  - images/living-together-10.jpg
+  - url: images/living-together-01.jpg
+    title: ''
+  - url: images/living-together-02.jpg
+    title: ''
+  - url: images/living-together-03.jpg
+    title: ''
+  - url: images/living-together-04.jpg
+    title: ''
+  - url: images/living-together-05.jpg
+    title: ''
+  - url: images/living-together-06.jpg
+    title: ''
+  - url: images/living-together-07.jpg
+    title: ''
+  - url: images/living-together-08.jpg
+    title: ''
+  - url: images/living-together-09.jpg
+    title: ''
+  - url: images/living-together-10.jpg
+    title: ''
 ---

@@ -9,5 +9,6 @@ tags: work
 order: 140
 cover: images/mother-son.jpg
 gallery:
-  - images/mother-son.jpg
+  - url: images/mother-son.jpg
+    title:
 ---

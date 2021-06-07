@@ -9,9 +9,14 @@ tags: work
 order: 200
 cover: images/island-hoping-1.jpg
 gallery:
-  - images/island-hoping-1.jpg
-  - images/island-hoping-2.jpg
-  - images/island-hoping-3.jpg
-  - images/island-hoping-4.jpg
-  - images/island-hoping-7.jpg
+  - url: images/island-hoping-1.jpg
+    title:
+  - url: images/island-hoping-2.jpg
+    title:
+  - url: images/island-hoping-3.jpg
+    title:
+  - url: images/island-hoping-4.jpg
+    title:
+  - url: images/island-hoping-7.jpg
+    title:
 ---

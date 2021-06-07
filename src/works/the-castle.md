@@ -9,7 +9,10 @@ tags: work
 order: 050
 cover: images/the-castle-01.jpg
 gallery:
-  - images/the-castle-01.jpg
-  - images/the-castle-02.jpg
-  - images/the-castle-03.jpg
+  - url: images/the-castle-01.jpg
+    title:
+  - url: images/the-castle-02.jpg
+    title:
+  - url: images/the-castle-03.jpg
+    title:
 ---

@@ -9,10 +9,16 @@ tags: work
 order: 044
 cover: images/cranes-01.jpg
 gallery:
-  - images/cranes-01.jpg
-  - images/cranes-02.jpg
-  - images/cranes-03.jpg
-  - images/cranes-04.jpg
-  - images/cranes-05.jpg
-  - images/cranes-06.jpg
+  - url: images/cranes-01.jpg
+    title: ''
+  - url: images/cranes-02.jpg
+    title: ''
+  - url: images/cranes-03.jpg
+    title: ''
+  - url: images/cranes-04.jpg
+    title: ''
+  - url: images/cranes-05.jpg
+    title: ''
+  - url: images/cranes-06.jpg
+    title: ''
 ---

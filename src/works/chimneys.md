@@ -9,7 +9,10 @@ tags: work
 order: 110
 cover: images/chimneys-01.jpg
 gallery:
-  - images/chimneys-01.jpg
-  - images/chimneys-02.jpg
-  - images/chimneys-03.jpg
+  - url: images/chimneys-01.jpg
+    title: ''
+  - url: images/chimneys-02.jpg
+    title: ''
+  - url: images/chimneys-03.jpg
+    title: ''
 ---

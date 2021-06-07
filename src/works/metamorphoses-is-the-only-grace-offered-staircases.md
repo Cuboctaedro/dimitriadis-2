@@ -9,9 +9,17 @@ tags: work
 order: 170
 cover: images/staircases-01.jpg
 gallery:
-  - images/staircases-01.jpg
-  - images/staircases-02.jpg
-  - images/staircases-03.jpg
-  - images/staircases-04.jpg
-  - images/staircases-05.jpg
+  - url: images/staircases-01.jpg
+    title:
+  - url: images/staircases-02.jpg
+    title:
+  - url: images/staircases-03.jpg
+    title:
+  - url: images/staircases-04.jpg
+    title:
+  - url: images/staircases-05.jpg
+    title:
+installations:
+  - url: images/metamorphosis-tempus-ritualis.jpg
+    title: '"Tempus Ritualis", Curated by Christine Nippe, Evanthia Tsantila, Christina Dimitriadis CACT, Contemporary Art Center of Thessaloniki, Thessaloniki, 2014'
 ---

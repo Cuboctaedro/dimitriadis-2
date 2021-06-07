@@ -1,10 +1,6 @@
 import PhotoSwipe from "photoswipe";
 import PhotoSwipeUI_Default from "photoswipe/dist/photoswipe-ui-default";
 
-const pswpButtons = document.querySelectorAll('[data-gallery]');
-
-console.log('new');
-
 
 const openPhotoSwipe = function(button) {
 	const pswpElement = document.querySelectorAll(".pswp")[0];
@@ -27,8 +23,10 @@ const openPhotoSwipe = function(button) {
 	gallery.init();
 };
 
+const pswpButtons = document.querySelectorAll('[data-gallery]');
+
 if ( pswpButtons ) {
-	Array.prototype.forEach.call(pswpButtons, function(button) {
+	pswpButtons.forEach(function(button) {
 		button.addEventListener('click', function() {
 			openPhotoSwipe(button);
 		})

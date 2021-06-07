@@ -9,6 +9,8 @@ tags: work
 order: 060
 cover: images/obscure-passages-01.jpg
 gallery:
-  - images/obscure-passages-01.jpg
-  - images/obscure-passages-02.jpg
+  - url: images/obscure-passages-01.jpg
+    title:
+  - url: images/obscure-passages-02.jpg
+    title:
 ---
