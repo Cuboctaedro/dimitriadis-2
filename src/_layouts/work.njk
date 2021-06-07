@@ -19,15 +19,10 @@
                 <p class="mb-0">{{ place }}</p>
                 <p class="mb-0">Medium: {{ medium }}</p>
                 <p class="mb-6">Size: {{ size }}</p>
-                <a class="uppercase font-bold text-black cursor-pointer hover:text-gray-600" id="pswp-button" data-gallery='{{ gallery | galleryData }}' >Images</a>
-                {# {% if installations and installations.length > 0 %} #}
-                    <h3 class="uppercase  ">Installation views</h3>
-                    {% for item in installations %}
-                        <a class="text-black font-bold cursor-pointer hover:text-gray-600" id="pswp-installation-{{loop.index}}" data-gallery='{{ item.images | galleryData }}' >
-                            {{item.title}}
-                        </a>
-                    {% endfor %}
-                {# {% endif %} #}
+                <a class="uppercase font-bold text-black cursor-pointer hover:text-gray-600 mb-3" data-gallery='{{ gallery | galleryData }}' >Images</a>
+                {% if installations and installations.length > 0 %}
+                    <a class="uppercase font-bold text-black cursor-pointer hover:text-gray-600" data-gallery='{{ installations | galleryData }}' >Installation views</a>
+                {% endif %}
             </div>
         </article>
 

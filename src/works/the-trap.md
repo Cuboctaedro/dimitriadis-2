@@ -9,12 +9,15 @@ tags: work
 order: 100
 cover: images/the-trap-01.jpg
 gallery:
-  - images/the-trap-01.jpg
-  - images/the-trap-02.jpg
-  - images/the-trap-03.jpg
-  - images/the-trap-04.jpg
+  - url: images/the-trap-01.jpg
+    title: 
+  - url: images/the-trap-02.jpg
+    title: 
+  - url: images/the-trap-03.jpg
+    title:
+  - url: images/the-trap-04.jpg
+    title:
 installations:
   - title: '"Symbioses", Curators without Borders, Berlin, 2008'
-    images:
-      - images/the-trap-gallery.jpg
+    url: images/the-trap-gallery.jpg
 ---
