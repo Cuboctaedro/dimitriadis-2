@@ -29,3 +29,21 @@
 		margin-bottom: 1.5rem;
 	}
 }
+
+.random {
+	&.side-right {
+		.image {
+			order: 2;
+		}
+		.text {
+			order: 1;
+			text-align: right;
+		}
+	}
+	&.num-2 {
+		transform: translateX(25%);
+	}
+	&.num-3 {
+		transform: translateX(50%);
+	}
+}
