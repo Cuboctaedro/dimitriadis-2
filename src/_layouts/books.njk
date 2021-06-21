@@ -10,30 +10,30 @@
                             {% image './src/' + item.data.cover, 'block w-full h-auto', item.data.title + ' cover', "100vw, (min width 540px) 50vw, (min width 768px) 33vw, (min width 1024px) 25vw" %}
                         </div>
                         <div class="w-full sm:w-1/2 md:w-2/3 lg:w-3/4 px-3">
-                            <h1 class="font-bold text-base sm:text-lg uppercase mb-6">{{ item.data.title }}</h1>
+                            <h1 class="font-semibold text-base sm:text-lg mb-4">{{ item.data.title }}</h1>
                             {% if(item.data.texts) %}
                             <div class="pb-1">
-                                <span class="uppercase">Texts: </span>{{item.data.texts}}
+                                <span class="uppercase text-sm">Texts: </span>{{item.data.texts}}
                             </div>
                             {% endif %}
                             {% if(item.data.language) %}
                             <div class="pb-1">
-                                <span class="uppercase">Language: </span>{{item.data.language}}
+                                <span class="uppercase text-sm">Language: </span>{{item.data.language}}
                             </div>
                             {% endif %}
                             {% if(item.data.editor) %}
                             <div class="pb-1">
-                                <span class="uppercase">Editor: </span>{{item.data.editor}}
+                                <span class="uppercase text-sm">Editor: </span>{{item.data.editor}}
                             </div>
                             {% endif %}
                             {% if(item.data.design) %}
                             <div class="pb-1">
-                                <span class="uppercase">Design: </span>{{item.data.design}}
+                                <span class="uppercase text-sm">Design: </span>{{item.data.design}}
                             </div>
                             {% endif %}
                             {% if(item.data.publisher) %}
                             <div class="pb-1">
-                                <span class="uppercase">Publisher: </span>{{item.data.publisher}}
+                                <span class="uppercase text-sm">Publisher: </span>{{item.data.publisher}}
                             </div>
                             {% endif %}
                             {% if(item.data.description) %}

@@ -41,9 +41,9 @@
 		}
 	}
 	&.num-2 {
-		transform: translateX(25%);
+		transform: translateX(33%);
 	}
 	&.num-3 {
-		transform: translateX(50%);
+		transform: translateX(66%);
 	}
 }
