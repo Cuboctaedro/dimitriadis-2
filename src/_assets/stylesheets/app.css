@@ -30,20 +30,23 @@
 	}
 }
 
-.random {
-	&.side-right {
-		.image {
-			order: 2;
+@screen lg {
+	.random {
+		&.side-right {
+			.image {
+				order: 2;
+			}
+			.text {
+				order: 1;
+				text-align: right;
+			}
 		}
-		.text {
-			order: 1;
-			text-align: right;
+		&.num-2 {
+			transform: translateX(33%);
 		}
-	}
-	&.num-2 {
-		transform: translateX(33%);
-	}
-	&.num-3 {
-		transform: translateX(66%);
+		&.num-3 {
+			transform: translateX(66%);
+		}
 	}
 }
+
