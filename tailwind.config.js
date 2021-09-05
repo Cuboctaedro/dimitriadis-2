@@ -147,7 +147,7 @@ module.exports = {
 		},
 		fontFamily: {
 			sans: [
-				"Poppins",
+				"Archivo",
 				// "'Source Sans Pro'",
 				// "'Work Sans'",
 				"Roboto",

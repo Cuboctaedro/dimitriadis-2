@@ -19,4 +19,9 @@ gallery:
     title:
   - url: images/private-spaces-05.jpg
     title:
+installations:
+  - url: images/private-spaces-ex-01.jpg
+    title: '"Technologies of the Self", a retrospective of the artist’s most important photographic series from 1995–2015, curated by Barbara Piwowarska, Galeria Studio, Warsaw, 2015'
+  - url: images/private-spaces-ex-02.jpg
+    title: '"Technologies of the Self", a retrospective of the artist’s most important photographic series from 1995–2015, curated by Barbara Piwowarska, Galeria Studio, Warsaw, 2015'
 ---

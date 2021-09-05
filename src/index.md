@@ -1,5 +1,5 @@
 ---
 title: Home
 layout: home
-cover: images/island-hoping-1.jpg
+cover: images/island-hoping-01.jpg
 ---

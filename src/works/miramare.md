@@ -17,10 +17,13 @@ gallery:
     title:
   - url: images/miramare-04.jpg
     title:
-  - url: images/miramare-05.jpg
-    title:
-  - url: images/miramare-06.jpg
-    title:
-  - url: images/miramare-07.jpg
-    title:
+installations:
+  - url: images/miramare-3bienale.jpg
+    title: 'Biennále:3 “a Rock & a Hard Place” Main Programme, curated by Paolo Colombo, Mahita el Bacha Urieta, Marina Fokidis, Archelological Museum, Thessaloniki, 2011'
+  - url: images/miramare-endand-koroneou-5675.jpg
+    title: '"End And", Eleni Koroneou Gallery, 2012'
+  - url: images/miramare-endand-koroneou-5682.jpg
+    title: '"End And", Eleni Koroneou Gallery, 2012'
+  - url: images/miramare-endand-koroneou-5736.jpg
+    title: '"End And", Eleni Koroneou Gallery, 2012'
 ---
