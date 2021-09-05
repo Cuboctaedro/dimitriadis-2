@@ -1,36 +1,60 @@
-import PhotoSwipe from "photoswipe";
-import PhotoSwipeUI_Default from "photoswipe/dist/photoswipe-ui-default";
+const tabContainer = document.getElementById('tabs');
 
-
-const openPhotoSwipe = function(button) {
-	const pswpElement = document.querySelectorAll(".pswp")[0];
-	let options = {
-		history: true,
-		focus: false,
-
-		showAnimationDuration: 200,
-		hideAnimationDuration: 200
-	};
-
-	let items = JSON.parse(button.dataset.gallery);
-
-	let gallery = new PhotoSwipe(
-		pswpElement,
-		PhotoSwipeUI_Default,
-		items,
-		options
-	);
-	gallery.init();
-};
-
-const pswpButtons = document.querySelectorAll('[data-gallery]');
-
-if ( pswpButtons ) {
-	pswpButtons.forEach(function(button) {
-		button.addEventListener('click', function() {
-			openPhotoSwipe(button);
-		})
-	});
+if (tabContainer) {
+	const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
 	
+	tabs.forEach((tab) => {
+		tab.addEventListener('click', (e) => {
+			e.preventDefault();
+			const selected = tab.getAttribute('aria-selected') === true;
+			const otherTabs = tabs.filter((t) => (t.id !== tab.id));
+			if (!selected) {
+				const target = document.getElementById(tab.getAttribute('data-target'));
+				otherTabs.forEach((t) => {
+					t.setAttribute('aria-selected', false);
+					document.getElementById(t.getAttribute('data-target')).setAttribute('hidden', true);
+				});
+				target.removeAttribute('hidden');
+				tab.setAttribute('aria-selected', true);
+			}
+		});
+	});
 }
 
+const imagesSlider = document.getElementById('images-panel');
+
+if (imagesSlider) {
+	const prev = document.getElementById('images-prev');
+	const next = document.getElementById('images-next');
+	const images = Array.from(document.querySelectorAll('.images-frame'));
+	const indexSpan = document.getElementById('images-index');
+	let index = 1;
+	const setVisibleImage = (i) => {
+		images.forEach((image) => {
+			if (image.id === `images-frame-${i}`) {
+				image.removeAttribute('hidden');
+			} else {
+				image.setAttribute('hidden', true);
+			}
+		});
+		indexSpan.textContent = i.toString();
+	}
+	setVisibleImage(index);
+	prev.addEventListener('click', (e) => {
+		if (index === 1) {
+			index = images.length;
+		} else {
+			index = index - 1;
+		}
+		setVisibleImage(index);
+	});
+	next.addEventListener('click', (e) => {
+		if (index === images.length) {
+			index = 1;
+		} else {
+			index = index + 1;
+		}
+		setVisibleImage(index);
+	});
+
+}

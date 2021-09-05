@@ -4,6 +4,10 @@
 
 @import "tailwindcss/utilities";
 
+body {
+	min-height: 101vh;
+}
+
 .unseen {
 	position: absolute;
 	left: -10000px;
@@ -29,24 +33,45 @@
 		margin-bottom: 1.5rem;
 	}
 }
-
-@screen lg {
+@screen md {
 	.random {
-		&.side-right {
-			.image {
-				order: 2;
-			}
-			.text {
-				order: 1;
-				text-align: right;
-			}
-		}
-		&.num-2 {
-			transform: translateX(33%);
-		}
 		&.num-3 {
-			transform: translateX(66%);
+			transform: translateX(50%);
+		}
+		&.num-4 {
+			transform: translateX(100%);
+		}
+		&.num-5 {
+			transform: translateX(100%);
 		}
 	}
 }
 
+@screen xl {
+	.random {
+		&.num-2 {
+			transform: translateX(50%);
+		}
+		&.num-3 {
+			transform: translateX(100%);
+		}
+		&.num-4 {
+			transform: translateX(150%);
+		}
+		&.num-5 {
+			transform: translateX(200%);
+		}
+	}
+}
+
+.tablist a[aria-selected="true"] {
+	@apply font-bold;
+}
+
+.images-slider {
+	img {
+		max-height: calc(100vh - 16rem);
+		max-width: auto;
+		display: block;
+	}
+}

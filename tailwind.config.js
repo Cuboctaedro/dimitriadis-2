@@ -4,7 +4,8 @@ module.exports = {
 			sm: "540px",
 			md: "768px",
 			lg: "1024px",
-			xl: "1280px"
+			xl: "1360px",
+			xxl: "1600px",
 		},
 		colors: {
 			transparent: "transparent",
@@ -146,8 +147,9 @@ module.exports = {
 		},
 		fontFamily: {
 			sans: [
-				"'Work Sans'",
-				'"Times New Roman"',
+				"Poppins",
+				// "'Source Sans Pro'",
+				// "'Work Sans'",
 				"Roboto",
 				'"Helvetica Neue"',
 				"Arial",
