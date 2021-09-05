@@ -59,7 +59,10 @@
                 <div class="w-full">
                     {% for pic in installations %}
                         <div class="w-full pb-12" id="views-frame-{{ loop.index }}">
-                            {% image './src/' + pic.url, pic.title, 'lg' %}
+                            <figure>
+                                {% image './src/' + pic.url, '', 'lg' %}
+                                <figcaption class="pt-1 text-sm xl:max-w-1/2">{{ pic.title }}</figcaption>
+                            </figure>
                         </div>
                     {% endfor %}
                 </div>
